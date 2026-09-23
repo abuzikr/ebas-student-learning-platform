@@ -1,1 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>EBAS Learning Academy</title>
+
+  <meta name="description"
+        content="EBAS Learning Academy - A digital learning platform for students, teachers and lifelong learners.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f8f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      background: linear-gradient(
+        135deg,
+        #075e2b,
+        #0b7a3b
+      );
+
+      color: white;
+      text-align: center;
+      padding: 35px 15px;
+
+      border-bottom: 5px solid #d4af37;
+    }
+
+    .logo {
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      margin: 5px 0;
+    }
+
+    .motto {
+      color: #ffd95a;
+      font-weight: bold;
+      font-size: 17px;
+      margin-top: 10px;
+    }
+
+
+    /* =========================
+       MAIN CONTAINER
+    ========================== */
+
+    .container {
+      width: 94%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 0 45px;
+    }
+
+
+    /* =========================
+       WELCOME
+    ========================== */
+
+    .welcome {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 14px;
+
+      border-left: 6px solid #d4af37;
+
+      box-shadow:
+        0 3px 12px rgba(0,0,0,0.08);
+
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .welcome h2 {
+      color: #075e2b;
+      margin-bottom: 12px;
+      font-size: 25px;
+    }
+
+    .welcome p {
+      max-width: 750px;
+      margin: auto;
+    }
+
+
+    /* =========================
+       SECTION TITLE
+    ========================== */
+
+    .section-title {
+      text-align: center;
+      color: #075e2b;
+      margin: 30px 0 20px;
+      font-size: 25px;
+    }
+
+
+    /* =========================
+       LEARNING CARDS
+    ========================== */
+
+    .cards {
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+
+      border-radius: 14px;
+
+      padding: 25px 20px;
+
+      text-align: center;
+
+      box-shadow:
+        0 3px 12px rgba(0,0,0,0.08);
+
+      border-top: 5px solid #075e2b;
+
+      transition: transform 0.2s,
+                  box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+
+      box-shadow:
+        0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    .card-icon {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #075e2b;
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #555;
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+
+      background: #075e2b;
+      color: white;
+
+      text-decoration: none;
+
+      padding: 11px 18px;
+
+      border-radius: 8px;
+
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #064b23;
+    }
+
+
+    /* =========================
+       ASK EBAS
+    ========================== */
+
+    .ask-ebas {
+      margin-top: 35px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #075e2b,
+          #0b7a3b
+        );
+
+      color: white;
+
+      padding: 30px 25px;
+
+      border-radius: 15px;
+
+      text-align: center;
+
+      box-shadow:
+        0 4px 15px rgba(0,0,0,0.12);
+    }
+
+    .ask-ebas h2 {
+      font-size: 27px;
+      margin-bottom: 10px;
+    }
+
+    .ask-ebas p {
+      max-width: 700px;
+      margin: auto auto 20px;
+    }
+
+    .ask-button {
+      display: inline-block;
+
+      background: #ffd95a;
+      color: #075e2b;
+
+      text-decoration: none;
+
+      padding: 13px 24px;
+
+      border-radius: 9px;
+
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       FEATURES
+    ========================== */
+
+    .features {
+      margin-top: 35px;
+
+      background: white;
+
+      padding: 25px;
+
+      border-radius: 14px;
+
+      box-shadow:
+        0 3px 12px rgba(0,0,0,0.07);
+    }
+
+    .features h2 {
+      color: #075e2b;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .features ul {
+      list-style: none;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .features li {
+      padding: 10px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .features li:last-child {
+      border-bottom: none;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #053d1d;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 28px 15px;
+
+      margin-top: 40px;
+    }
+
+    footer strong {
+      color: #ffd95a;
+    }
+
+    .contact {
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 600px) {
+
+      .logo {
+        font-size: 29px;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      .welcome {
+        padding: 22px 17px;
+      }
+
+      .welcome h2 {
+        font-size: 21px;
+      }
+
+      .card {
+        padding: 22px 17px;
+      }
+
+      .ask-ebas {
+        padding: 25px 18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+  <div class="logo">
+    📘
+  </div>
+
+  <h1>
+    EBAS LEARNING ACADEMY
+  </h1>
+
+  <p>
+    Your Digital Learning Platform
+  </p>
+
+  <p class="motto">
+    PASS ALL WITH EXCELLENCE
+  </p>
+
+  <p>
+    Excellent Brotherhood Academy Syndicate
+  </p>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+
+<div class="container">
+
+
+  <!-- WELCOME -->
+
+  <section class="welcome">
+
+    <h2>
+      👋 Welcome to EBAS Learning Academy
+    </h2>
+
+    <p>
+      A digital learning environment designed to help
+      students learn, practise, ask questions and improve
+      their academic performance.
+    </p>
+
+  </section>
+
+
+
+  <!-- LEARNING LEVELS -->
+
+  <h2 class="section-title">
+    📚 Choose Your Learning Level
+  </h2>
+
+
+  <div class="cards">
+
+
+    <!-- PRIMARY -->
+
+    <div class="card">
+
+      <div class="card-icon">
+        📚
+      </div>
+
+      <h3>
+        PRIMARY
+      </h3>
+
+      <p>
+        Learning resources and examination preparation
+        for NPSE students.
+      </p>
+
+      <a href="#" class="btn">
+        Explore Primary
+      </a>
+
+    </div>
+
+
+
+    <!-- JSS -->
+
+    <div class="card">
+
+      <div class="card-icon">
+        🎓
+      </div>
+
+      <h3>
+        JSS
+      </h3>
+
+      <p>
+        Lessons, exercises and BECE preparation for
+        Junior Secondary School students.
+      </p>
+
+      <a href="#" class="btn">
+        Explore JSS
+      </a>
+
+    </div>
+
+
+
+    <!-- SSS -->
+
+    <div class="card">
+
+      <div class="card-icon">
+        🏫
+      </div>
+
+      <h3>
+        SSS
+      </h3>
+
+      <p>
+        Subject materials, practice questions and
+        WASSCE preparation for Senior Secondary students.
+      </p>
+
+      <a href="#" class="btn">
+        Explore SSS
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- ASK EBAS -->
+
+  <section class="ask-ebas">
+
+    <h2>
+      🤖 ASK EBAS
+    </h2>
+
+    <p>
+      Need help with a lesson or difficult question?
+      Our future EBAS Learning Assistant will allow
+      students to ask questions and learn through
+      conversation.
+    </p>
+
+    <a href="#" class="ask-button">
+      💬 Ask EBAS
+    </a>
+
+  </section>
+
+
+
+  <!-- OTHER FEATURES -->
+
+  <h2 class="section-title">
+    🌟 EBAS Learning Environment
+  </h2>
+
+
+  <section class="features">
+
+    <ul>
+
+      <li>
+        📖 <strong>Interactive Lessons</strong> —
+        Learn concepts step by step.
+      </li>
+
+      <li>
+        ✏️ <strong>Practice Questions</strong> —
+        Test what you have learned.
+      </li>
+
+      <li>
+        📝 <strong>Examination Preparation</strong> —
+        Prepare for NPSE, BECE and WASSCE.
+      </li>
+
+      <li>
+        🤖 <strong>Learning Assistant</strong> —
+        Ask questions and receive learning support.
+      </li>
+
+      <li>
+        📈 <strong>Learning Progress</strong> —
+        Track your development as the platform grows.
+      </li>
+
+      <li>
+        👨‍🏫 <strong>Teacher Resources</strong> —
+        Supporting teachers with quality educational materials.
+      </li>
+
+    </ul>
+
+  </section>
+
+
+</div>
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+  <p>
+    <strong>
+      Excellent Brotherhood Academy Syndicate (EBAS)
+    </strong>
+  </p>
+
+  <p>
+    EBAS Learning Academy
+  </p>
+
+  <div class="contact">
+
+    <p>
+      📧 kamaraabubakarrsidikie1@gmail.com
+    </p>
+
+  </div>
+
+  <p style="margin-top:15px;">
+    PASS ALL WITH EXCELLENCE
+  </p>
+
+  <p style="margin-top:10px;">
+    © 2026 EBAS Learning Academy
+  </p>
+
+</footer>
+
+
+</body>
+</html>
