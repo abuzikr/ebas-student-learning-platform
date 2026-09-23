@@ -1,1 +1,729 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>SSS Science Faculty | EBAS Learning Academy</title>
+
+  <meta name="description"
+        content="SSS Science Faculty at EBAS Learning Academy - SSS 1, SSS 2 and SSS 3 learning resources.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f8f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      background: linear-gradient(
+        135deg,
+        #075e2b,
+        #0b7a3b
+      );
+
+      color: white;
+
+      text-align: center;
+
+      padding: 35px 15px;
+
+      border-bottom: 5px solid #d4af37;
+    }
+
+    .logo {
+      font-size: 45px;
+      margin-bottom: 8px;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      margin: 5px 0;
+    }
+
+    .motto {
+      color: #ffd95a;
+      font-weight: bold;
+      font-size: 17px;
+      margin-top: 10px;
+    }
+
+    /* =========================
+       MAIN CONTAINER
+    ========================== */
+
+    .container {
+      width: 94%;
+      max-width: 1100px;
+
+      margin: auto;
+
+      padding: 25px 0 45px;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================== */
+
+    .navigation {
+      margin-bottom: 20px;
+    }
+
+    .navigation a {
+      display: inline-block;
+
+      background: white;
+
+      color: #075e2b;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      padding: 9px 15px;
+
+      border-radius: 8px;
+
+      margin-right: 6px;
+
+      margin-bottom: 6px;
+
+      box-shadow:
+        0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .navigation a:hover {
+      background: #075e2b;
+      color: white;
+    }
+
+    /* =========================
+       WELCOME
+    ========================== */
+
+    .welcome {
+      background: white;
+
+      padding: 30px 25px;
+
+      border-radius: 14px;
+
+      border-left: 6px solid #d4af37;
+
+      box-shadow:
+        0 3px 12px rgba(0,0,0,0.08);
+
+      text-align: center;
+
+      margin-bottom: 30px;
+    }
+
+    .welcome h2 {
+      color: #075e2b;
+
+      font-size: 27px;
+
+      margin-bottom: 12px;
+    }
+
+    .welcome p {
+      max-width: 800px;
+
+      margin: auto;
+    }
+
+    /* =========================
+       SECTION TITLE
+    ========================== */
+
+    .section-title {
+      text-align: center;
+
+      color: #075e2b;
+
+      font-size: 25px;
+
+      margin: 30px 0 20px;
+    }
+
+    /* =========================
+       LEVEL CARDS
+    ========================== */
+
+    .levels {
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+      gap: 22px;
+    }
+
+    .level-card {
+      background: white;
+
+      border-radius: 15px;
+
+      padding: 28px 22px;
+
+      text-align: center;
+
+      box-shadow:
+        0 3px 12px rgba(0,0,0,0.08);
+
+      border-top: 6px solid #075e2b;
+
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+    }
+
+    .level-card:hover {
+      transform: translateY(-5px);
+
+      box-shadow:
+        0 7px 20px rgba(0,0,0,0.13);
+    }
+
+    .level-icon {
+      font-size: 45px;
+
+      margin-bottom: 10px;
+    }
+
+    .level-card h3 {
+      color: #075e2b;
+
+      font-size: 24px;
+
+      margin-bottom: 10px;
+    }
+
+    .level-card p {
+      color: #555;
+
+      margin-bottom: 18px;
+    }
+
+    /* =========================
+       SUBJECT PREVIEW
+    ========================== */
+
+    .subjects {
+      text-align: left;
+
+      max-width: 300px;
+
+      margin: 0 auto 18px;
+    }
+
+    .subjects div {
+      padding: 7px 0;
+
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .subjects div:last-child {
+      border-bottom: none;
+    }
+
+    /* =========================
+       BUTTON
+    ========================== */
+
+    .btn {
+      display: inline-block;
+
+      background: #075e2b;
+
+      color: white;
+
+      text-decoration: none;
+
+      padding: 11px 20px;
+
+      border-radius: 8px;
+
+      font-weight: bold;
+
+      margin-top: 5px;
+    }
+
+    .btn:hover {
+      background: #064b23;
+    }
+
+    /* =========================
+       LEARNING SYSTEM
+    ========================== */
+
+    .learning-system {
+      background: white;
+
+      padding: 28px 22px;
+
+      border-radius: 14px;
+
+      box-shadow:
+        0 3px 12px rgba(0,0,0,0.07);
+
+      margin-top: 35px;
+
+      text-align: center;
+    }
+
+    .learning-system h2 {
+      color: #075e2b;
+
+      margin-bottom: 15px;
+    }
+
+    .learning-system p {
+      max-width: 780px;
+
+      margin: auto;
+    }
+
+    .steps {
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(160px, 1fr));
+
+      gap: 15px;
+
+      margin-top: 22px;
+    }
+
+    .step {
+      background: #f8fbf9;
+
+      padding: 17px;
+
+      border-radius: 10px;
+    }
+
+    .step strong {
+      display: block;
+
+      color: #075e2b;
+
+      margin-bottom: 5px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #053d1d;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 28px 15px;
+
+      margin-top: 40px;
+    }
+
+    footer strong {
+      color: #ffd95a;
+    }
+
+    .contact {
+      margin-top: 10px;
+
+      line-height: 1.8;
+    }
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 600px) {
+
+      .logo {
+        font-size: 38px;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      .welcome {
+        padding: 23px 17px;
+      }
+
+      .welcome h2 {
+        font-size: 22px;
+      }
+
+      .level-card {
+        padding: 24px 17px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+  <div class="logo">
+    🔬
+  </div>
+
+  <h1>
+    SSS SCIENCE FACULTY
+  </h1>
+
+  <p>
+    EBAS Learning Academy
+  </p>
+
+  <p class="motto">
+    PASS ALL WITH EXCELLENCE
+  </p>
+
+  <p>
+    Science Learning Environment
+  </p>
+
+</header>
+
+
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+
+<div class="container">
+
+
+  <!-- NAVIGATION -->
+
+  <div class="navigation">
+
+    <a href="index.html">
+      ← Home
+    </a>
+
+    <a href="sss.html">
+      ← SSS Faculties
+    </a>
+
+  </div>
+
+
+  <!-- WELCOME -->
+
+  <section class="welcome">
+
+    <h2>
+      🧪 Welcome to the Science Faculty
+    </h2>
+
+    <p>
+      Select your class level below to access science
+      subjects, lessons, exercises, quizzes and
+      examination preparation resources.
+    </p>
+
+  </section>
+
+
+  <!-- LEVELS -->
+
+  <h2 class="section-title">
+    🎓 Choose Your Class
+  </h2>
+
+
+  <div class="levels">
+
+
+    <!-- =========================
+         SSS 1
+    ========================== -->
+
+    <div class="level-card">
+
+      <div class="level-icon">
+        1️⃣
+      </div>
+
+      <h3>
+        SSS 1
+      </h3>
+
+      <p>
+        Build strong foundations in science and
+        prepare for higher-level study.
+      </p>
+
+      <div class="subjects">
+
+        <div>⚛️ Physics</div>
+
+        <div>🧪 Chemistry</div>
+
+        <div>🧬 Biology</div>
+
+        <div>📐 Mathematics</div>
+
+      </div>
+
+      <a href="sss1-science.html" class="btn">
+        Enter SSS 1
+      </a>
+
+    </div>
+
+
+    <!-- =========================
+         SSS 2
+    ========================== -->
+
+    <div class="level-card">
+
+      <div class="level-icon">
+        2️⃣
+      </div>
+
+      <h3>
+        SSS 2
+      </h3>
+
+      <p>
+        Develop deeper understanding and strengthen
+        examination skills.
+      </p>
+
+      <div class="subjects">
+
+        <div>⚛️ Physics</div>
+
+        <div>🧪 Chemistry</div>
+
+        <div>🧬 Biology</div>
+
+        <div>📐 Mathematics</div>
+
+      </div>
+
+      <a href="sss2-science.html" class="btn">
+        Enter SSS 2
+      </a>
+
+    </div>
+
+
+    <!-- =========================
+         SSS 3
+    ========================== -->
+
+    <div class="level-card">
+
+      <div class="level-icon">
+        3️⃣
+      </div>
+
+      <h3>
+        SSS 3
+      </h3>
+
+      <p>
+        Focus on WASSCE preparation, revision,
+        practice and examination success.
+      </p>
+
+      <div class="subjects">
+
+        <div>⚛️ Physics</div>
+
+        <div>🧪 Chemistry</div>
+
+        <div>🧬 Biology</div>
+
+        <div>📐 Mathematics</div>
+
+      </div>
+
+      <a href="sss3-science.html" class="btn">
+        Enter SSS 3
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- =========================
+       LEARNING SYSTEM
+  ========================== -->
+
+  <section class="learning-system">
+
+    <h2>
+      📖 How Science Learning Works
+    </h2>
+
+    <p>
+      Each subject will be developed gradually into
+      an organized digital classroom. Students will
+      be able to learn concepts, practise questions,
+      take quizzes and prepare for examinations.
+    </p>
+
+
+    <div class="steps">
+
+
+      <div class="step">
+
+        <strong>
+          📖 Learn
+        </strong>
+
+        Understand the topic step by step.
+
+      </div>
+
+
+      <div class="step">
+
+        <strong>
+          ✏️ Examples
+        </strong>
+
+        Study worked examples.
+
+      </div>
+
+
+      <div class="step">
+
+        <strong>
+          🧠 Practise
+        </strong>
+
+        Answer practice questions.
+
+      </div>
+
+
+      <div class="step">
+
+        <strong>
+          ✅ Quiz
+        </strong>
+
+        Test your understanding.
+
+      </div>
+
+
+      <div class="step">
+
+        <strong>
+          📝 WASSCE
+        </strong>
+
+        Practise examination questions.
+
+      </div>
+
+
+      <div class="step">
+
+        <strong>
+          🔄 Revision
+        </strong>
+
+        Review important concepts.
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+  <p>
+
+    <strong>
+      Excellent Brotherhood Academy Syndicate (EBAS)
+    </strong>
+
+  </p>
+
+  <p>
+    EBAS Learning Academy
+  </p>
+
+  <div class="contact">
+
+    <p>
+      📧 kamaraabubakarrsidikie1@gmail.com
+    </p>
+
+  </div>
+
+  <p style="margin-top:15px;">
+    PASS ALL WITH EXCELLENCE
+  </p>
+
+  <p style="margin-top:10px;">
+    © 2026 EBAS Learning Academy
+  </p>
+
+</footer>
+
+
+</body>
+
+</html>
+```
 
