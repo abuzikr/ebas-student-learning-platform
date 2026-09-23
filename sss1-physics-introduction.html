@@ -1,1 +1,586 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Introduction to Physics | SSS 1 | EBAS Learning Academy</title>
+
+  <meta name="description"
+        content="SSS 1 Physics - Introduction to Physics lesson by EBAS Learning Academy.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f8fb;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #123b5d;
+      color: white;
+      text-align: center;
+      padding: 32px 20px;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      margin: 4px 0;
+    }
+
+    .motto {
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #0d2d46;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 13px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background: #1d587f;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 950px;
+      margin: 30px auto;
+      position: relative;
+    }
+
+    /* EBAS WATERMARK */
+
+    .container::before {
+      content: "EBAS LEARNING ACADEMY";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-30deg);
+      font-size: 55px;
+      font-weight: bold;
+      color: rgba(18, 59, 93, 0.035);
+      pointer-events: none;
+      white-space: nowrap;
+      z-index: -1;
+    }
+
+    .lesson-header {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .lesson-header h2 {
+      color: #123b5d;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .lesson-header p {
+      color: #666;
+    }
+
+    .section {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 22px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    }
+
+    .section h3 {
+      color: #123b5d;
+      margin-bottom: 14px;
+      font-size: 22px;
+    }
+
+    .objectives {
+      padding-left: 22px;
+    }
+
+    .objectives li {
+      margin-bottom: 7px;
+    }
+
+    .definition {
+      background: #eef5f9;
+      border-left: 5px solid #123b5d;
+      padding: 18px;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+
+    .example {
+      background: #f8f8f8;
+      border-left: 5px solid #555;
+      padding: 18px;
+      margin-top: 15px;
+      border-radius: 6px;
+    }
+
+    .example strong {
+      color: #123b5d;
+    }
+
+    .questions {
+      padding-left: 22px;
+    }
+
+    .questions li {
+      margin-bottom: 12px;
+    }
+
+    .note {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 18px;
+      border-radius: 7px;
+      margin-top: 15px;
+    }
+
+    .back-button {
+      display: inline-block;
+      background: #123b5d;
+      color: white;
+      text-decoration: none;
+      padding: 11px 17px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .back-button:hover {
+      background: #1d587f;
+    }
+
+    footer {
+      background: #0d2d46;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 45px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 600px) {
+
+      header h1 {
+        font-size: 25px;
+      }
+
+      .lesson-header h2 {
+        font-size: 23px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <h1>SSS 1 PHYSICS</h1>
+
+    <p>EBAS LEARNING ACADEMY</p>
+
+    <p class="motto">PASS ALL WITH EXCELLENCE</p>
+
+  </header>
+
+
+  <nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="sss.html">SSS Faculties</a>
+
+    <a href="sss-science.html">Science Faculty</a>
+
+    <a href="sss1-physics.html">SSS 1 Physics</a>
+
+  </nav>
+
+
+  <main class="container">
+
+
+    <!-- LESSON TITLE -->
+
+    <section class="lesson-header">
+
+      <h2>TOPIC 1: INTRODUCTION TO PHYSICS</h2>
+
+      <p>
+        SSS 1 Physics
+      </p>
+
+      <p>
+        Prepared by EBAS Learning Academy
+      </p>
+
+    </section>
+
+
+    <!-- OBJECTIVES -->
+
+    <section class="section">
+
+      <h3>Learning Objectives</h3>
+
+      <p>
+        At the end of this lesson, the student should be able to:
+      </p>
+
+      <ul class="objectives">
+
+        <li>Define physics.</li>
+
+        <li>Explain the meaning of physical science.</li>
+
+        <li>Identify major branches of physics.</li>
+
+        <li>State some applications of physics.</li>
+
+        <li>Explain the importance of physics in everyday life.</li>
+
+        <li>Identify careers related to physics.</li>
+
+      </ul>
+
+    </section>
+
+
+    <!-- MEANING -->
+
+    <section class="section">
+
+      <h3>1.1 Meaning of Physics</h3>
+
+      <p>
+        Physics is a branch of science that deals with matter,
+        energy, motion, forces and the interactions between
+        them.
+      </p>
+
+      <div class="definition">
+
+        <strong>Definition:</strong>
+
+        <p>
+          Physics is the study of matter, energy, motion,
+          forces and the laws that govern natural phenomena.
+        </p>
+
+      </div>
+
+      <p>
+        Physics helps us understand how things happen in the
+        natural world. For example, physics explains why an
+        object falls to the ground, how vehicles move, how
+        electricity flows and how sound and light travel.
+      </p>
+
+    </section>
+
+
+    <!-- PHYSICS AND EVERYDAY LIFE -->
+
+    <section class="section">
+
+      <h3>1.2 Physics in Everyday Life</h3>
+
+      <p>
+        Physics is present in almost every part of our daily
+        activities.
+      </p>
+
+      <ul class="objectives">
+
+        <li>
+          <strong>Transportation:</strong>
+          Physics explains the motion of cars, bicycles,
+          aircraft and ships.
+        </li>
+
+        <li>
+          <strong>Electricity:</strong>
+          Physics helps us understand electrical circuits,
+          power generation and electrical appliances.
+        </li>
+
+        <li>
+          <strong>Communication:</strong>
+          Radio, television, mobile phones and satellites
+          depend on principles of physics.
+        </li>
+
+        <li>
+          <strong>Medicine:</strong>
+          X-rays, ultrasound and other medical technologies
+          make use of physics.
+        </li>
+
+        <li>
+          <strong>Construction:</strong>
+          Engineers use physics to design safe buildings,
+          bridges and other structures.
+        </li>
+
+      </ul>
+
+    </section>
+
+
+    <!-- BRANCHES -->
+
+    <section class="section">
+
+      <h3>1.3 Major Branches of Physics</h3>
+
+      <p>
+        Physics is divided into several branches. Some of the
+        major branches include:
+      </p>
+
+      <div class="note">
+
+        <p>
+          <strong>Mechanics:</strong>
+          Study of motion, forces and the behaviour of objects.
+        </p>
+
+        <p>
+          <strong>Thermodynamics:</strong>
+          Study of heat, temperature and energy transfer.
+        </p>
+
+        <p>
+          <strong>Optics:</strong>
+          Study of light and its behaviour.
+        </p>
+
+        <p>
+          <strong>Acoustics:</strong>
+          Study of sound.
+        </p>
+
+        <p>
+          <strong>Electricity and Magnetism:</strong>
+          Study of electric charges, electric currents,
+          magnetic fields and their interactions.
+        </p>
+
+        <p>
+          <strong>Atomic and Nuclear Physics:</strong>
+          Study of atoms, atomic nuclei and related phenomena.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXAMPLES -->
+
+    <section class="section">
+
+      <h3>1.4 Simple Examples</h3>
+
+      <div class="example">
+
+        <strong>Example 1:</strong>
+
+        <p>
+          A football is kicked and moves across the field.
+          Which branch of physics helps us study its motion?
+        </p>
+
+        <p>
+          <strong>Answer:</strong> Mechanics.
+        </p>
+
+      </div>
+
+
+      <div class="example">
+
+        <strong>Example 2:</strong>
+
+        <p>
+          Which branch of physics deals mainly with light?
+        </p>
+
+        <p>
+          <strong>Answer:</strong> Optics.
+        </p>
+
+      </div>
+
+
+      <div class="example">
+
+        <strong>Example 3:</strong>
+
+        <p>
+          The study of sound belongs mainly to which branch?
+        </p>
+
+        <p>
+          <strong>Answer:</strong> Acoustics.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRACTICE -->
+
+    <section class="section">
+
+      <h3>1.5 Practice Questions</h3>
+
+      <ol class="questions">
+
+        <li>
+          Define physics.
+        </li>
+
+        <li>
+          State four areas of everyday life where physics
+          is applied.
+        </li>
+
+        <li>
+          List five branches of physics.
+        </li>
+
+        <li>
+          Which branch of physics deals with light?
+        </li>
+
+        <li>
+          Which branch deals with sound?
+        </li>
+
+        <li>
+          State two applications of physics in medicine.
+        </li>
+
+      </ol>
+
+    </section>
+
+
+    <!-- REVISION -->
+
+    <section class="section">
+
+      <h3>Quick Revision</h3>
+
+      <ul class="objectives">
+
+        <li>
+          Physics is a branch of science concerned with
+          matter, energy, motion and forces.
+        </li>
+
+        <li>
+          Mechanics deals mainly with motion and forces.
+        </li>
+
+        <li>
+          Optics deals with light.
+        </li>
+
+        <li>
+          Acoustics deals with sound.
+        </li>
+
+        <li>
+          Physics has many applications in transportation,
+          electricity, medicine, communication and construction.
+        </li>
+
+      </ul>
+
+    </section>
+
+
+    <!-- NAVIGATION -->
+
+    <section class="section">
+
+      <a href="sss1-physics.html"
+         class="back-button">
+        ← Back to SSS 1 Physics
+      </a>
+
+    </section>
+
+
+  </main>
+
+
+  <footer>
+
+    <p><strong>EBAS LEARNING ACADEMY</strong></p>
+
+    <p>Excellent Brotherhood Academy Syndicate</p>
+
+    <p>PASS ALL WITH EXCELLENCE</p>
+
+    <p>
+      Email:
+      kamaraabubakarrsidikie1@gmail.com
+    </p>
+
+    <p>&copy; 2026 EBAS Learning Academy</p>
+
+  </footer>
+
+</body>
+</html>
+```
 
