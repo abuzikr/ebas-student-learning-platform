@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Primary / NPSE | EBAS Learning Academy</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #123c69;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            margin: 4px 0;
+        }
+
+        .motto {
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1100px;
+            margin: 25px auto;
+        }
+
+        .welcome {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .welcome h2 {
+            color: #123c69;
+            margin-bottom: 10px;
+        }
+
+        .subjects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .subject-card {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .subject-card h3 {
+            color: #123c69;
+            margin-bottom: 10px;
+        }
+
+        .subject-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #123c69;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0b2b4c;
+        }
+
+        .back {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #123c69;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 23px;
+            }
+
+            .container {
+                width: 94%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📗 EBAS LEARNING ACADEMY</h1>
+    <p>PRIMARY / NPSE CLASSROOM</p>
+    <p class="motto">PASS ALL WITH EXCELLENCE</p>
+    <p>Excellent Brotherhood Academy Syndicate</p>
+</header>
+
+<div class="container">
+
+    <section class="welcome">
+        <h2>Welcome to the Primary Classroom</h2>
+
+        <p>
+            Welcome to the Primary Learning Classroom of EBAS Learning Academy.
+            Here pupils can study important subjects, practise questions,
+            revise lessons and prepare for the National Primary School Examination
+            (NPSE).
+        </p>
+
+        <p>
+            Choose a subject below to begin your learning journey.
+        </p>
+    </section>
+
+    <section class="subjects">
+
+        <div class="subject-card">
+            <h3>📐 Mathematics</h3>
+            <p>
+                Numbers, fractions, decimals, geometry, measurement,
+                word problems and NPSE practice.
+            </p>
+            <a href="#" class="btn">Enter Mathematics</a>
+        </div>
+
+        <div class="subject-card">
+            <h3>📖 English Language</h3>
+            <p>
+                Grammar, comprehension, vocabulary, spelling,
+                writing and NPSE practice.
+            </p>
+            <a href="#" class="btn">Enter English</a>
+        </div>
+
+        <div class="subject-card">
+            <h3>🔬 Science</h3>
+            <p>
+                Basic science concepts, living things, matter,
+                energy, environment and revision.
+            </p>
+            <a href="#" class="btn">Enter Science</a>
+        </div>
+
+        <div class="subject-card">
+            <h3>🌱 Agricultural Science</h3>
+            <p>
+                Crops, animals, farming, soil, agriculture
+                and environmental studies.
+            </p>
+            <a href="#" class="btn">Enter Agriculture</a>
+        </div>
+
+        <div class="subject-card">
+            <h3>🌍 Social Studies</h3>
+            <p>
+                Society, community, citizenship, geography,
+                culture and national development.
+            </p>
+            <a href="#" class="btn">Enter Social Studies</a>
+        </div>
+
+        <div class="subject-card">
+            <h3>📝 NPSE Practice</h3>
+            <p>
+                Examination-style questions and revision
+                activities for NPSE preparation.
+            </p>
+            <a href="#" class="btn">Start Practice</a>
+        </div>
+
+    </section>
+
+    <div class="back">
+        <a href="index.html" class="btn">⬅ Back to Home</a>
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>EBAS LEARNING ACADEMY</strong></p>
+    <p>PASS ALL WITH EXCELLENCE</p>
+    <p>Excellent Brotherhood Academy Syndicate</p>
+    <p>kamaraabubakarrsidikie1@gmail.com</p>
+</footer>
+
+</body>
+</html>
