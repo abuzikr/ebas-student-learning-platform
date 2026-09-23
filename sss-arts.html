@@ -1,1 +1,421 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>SSS Arts Faculty | EBAS Learning Academy</title>
+
+  <meta name="description"
+        content="EBAS Learning Academy - SSS Arts Faculty for SSS 1, SSS 2 and SSS 3 students.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f8fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #123b5d;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .motto {
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 12px;
+    }
+
+    nav {
+      background: #0d2d46;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 12px;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 9px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: #1d587f;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1100px;
+      margin: 35px auto;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .intro h2 {
+      color: #123b5d;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .intro p {
+      max-width: 800px;
+      margin: auto;
+      color: #555;
+    }
+
+    .levels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .level-card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-top: 5px solid #123b5d;
+    }
+
+    .level-card h3 {
+      color: #123b5d;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .level-card p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .subjects {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .subjects li {
+      padding: 7px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .subjects li::before {
+      content: "✓ ";
+      color: #123b5d;
+      font-weight: bold;
+    }
+
+    .level-button {
+      display: inline-block;
+      background: #123b5d;
+      color: white;
+      text-decoration: none;
+      padding: 11px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .level-button:hover {
+      background: #1d587f;
+    }
+
+    .learning-system {
+      margin-top: 45px;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+      text-align: center;
+    }
+
+    .learning-system h2 {
+      color: #123b5d;
+      margin-bottom: 15px;
+    }
+
+    .system-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .system-item {
+      background: #eef5f9;
+      padding: 15px 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #123b5d;
+    }
+
+    footer {
+      background: #0d2d46;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 600px) {
+
+      header h1 {
+        font-size: 26px;
+      }
+
+      .intro h2 {
+        font-size: 23px;
+      }
+
+      .level-card {
+        padding: 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <h1>SSS ARTS FACULTY</h1>
+
+    <p>EBAS LEARNING ACADEMY</p>
+
+    <p class="motto">PASS ALL WITH EXCELLENCE</p>
+
+  </header>
+
+
+  <nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="sss.html">SSS Faculties</a>
+
+  </nav>
+
+
+  <main class="container">
+
+    <section class="intro">
+
+      <h2>Senior Secondary School Arts</h2>
+
+      <p>
+        Welcome to the EBAS SSS Arts Faculty.
+        Select your class level to access subjects,
+        lessons, examples, exercises, quizzes,
+        examination practice and revision materials.
+      </p>
+
+    </section>
+
+
+    <section class="levels">
+
+
+      <!-- SSS 1 -->
+
+      <div class="level-card">
+
+        <h3>SSS 1 Arts</h3>
+
+        <p>
+          Build a strong foundation in the Arts and
+          Social Science subjects.
+        </p>
+
+        <ul class="subjects">
+
+          <li>Government</li>
+
+          <li>History</li>
+
+          <li>Geography</li>
+
+          <li>Literature in English</li>
+
+          <li>Economics</li>
+
+          <li>Religious &amp; Moral Education</li>
+
+          <li>Mathematics</li>
+
+        </ul>
+
+        <a class="level-button"
+           href="sss1-arts.html">
+          Enter SSS 1 Arts
+        </a>
+
+      </div>
+
+
+      <!-- SSS 2 -->
+
+      <div class="level-card">
+
+        <h3>SSS 2 Arts</h3>
+
+        <p>
+          Develop deeper understanding and examination
+          skills across the Arts subjects.
+        </p>
+
+        <ul class="subjects">
+
+          <li>Government</li>
+
+          <li>History</li>
+
+          <li>Geography</li>
+
+          <li>Literature in English</li>
+
+          <li>Economics</li>
+
+          <li>Religious &amp; Moral Education</li>
+
+          <li>Mathematics</li>
+
+        </ul>
+
+        <a class="level-button"
+           href="sss2-arts.html">
+          Enter SSS 2 Arts
+        </a>
+
+      </div>
+
+
+      <!-- SSS 3 -->
+
+      <div class="level-card">
+
+        <h3>SSS 3 Arts</h3>
+
+        <p>
+          Prepare for WASSCE with focused lessons,
+          examination practice and revision.
+        </p>
+
+        <ul class="subjects">
+
+          <li>Government</li>
+
+          <li>History</li>
+
+          <li>Geography</li>
+
+          <li>Literature in English</li>
+
+          <li>Economics</li>
+
+          <li>Religious &amp; Moral Education</li>
+
+          <li>Mathematics</li>
+
+        </ul>
+
+        <a class="level-button"
+           href="sss3-arts.html">
+          Enter SSS 3 Arts
+        </a>
+
+      </div>
+
+
+    </section>
+
+
+    <!-- Learning System -->
+
+    <section class="learning-system">
+
+      <h2>EBAS Learning System</h2>
+
+      <p>
+        Every subject will gradually be developed using
+        the same structured learning system.
+      </p>
+
+      <div class="system-grid">
+
+        <div class="system-item">Learn</div>
+
+        <div class="system-item">Examples</div>
+
+        <div class="system-item">Practise</div>
+
+        <div class="system-item">Quiz</div>
+
+        <div class="system-item">WASSCE</div>
+
+        <div class="system-item">Revision</div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <footer>
+
+    <p><strong>EBAS LEARNING ACADEMY</strong></p>
+
+    <p>Excellent Brotherhood Academy Syndicate</p>
+
+    <p>PASS ALL WITH EXCELLENCE</p>
+
+    <p>
+      Email:
+      kamaraabubakarrsidikie1@gmail.com
+    </p>
+
+    <p>&copy; 2026 EBAS Learning Academy</p>
+
+  </footer>
+
+
+</body>
+</html>
+```
 
